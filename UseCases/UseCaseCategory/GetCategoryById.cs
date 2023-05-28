@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 using UseCases.Interfaces;
 using UseCases.UseCaseInterface;
 
-namespace UseCases
+namespace UseCases.Repository
 {
-    public class EditCategory : IEditCategory
+    public class GetCategoryById : IGetCategoryById
     {
         private readonly ICategoryRepository categoryRepository;
 
-        public EditCategory(ICategoryRepository categoryRepository)
+        public GetCategoryById(ICategoryRepository categoryRepository)
         {
             this.categoryRepository = categoryRepository;
         }
-        public void Execute(Category category)
+        public Category Execute(int categoryId)
         {
-            categoryRepository.UpdateCategory(category);
+            return categoryRepository.GetCategoryById(categoryId);
         }
     }
 }

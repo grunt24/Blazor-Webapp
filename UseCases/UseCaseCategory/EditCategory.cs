@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +7,19 @@ using System.Threading.Tasks;
 using UseCases.Interfaces;
 using UseCases.UseCaseInterface;
 
-namespace UseCases
+namespace UseCases.Repository
 {
-    public class DeleteCategory : IDeleteCategory
+    public class EditCategory : IEditCategory
     {
         private readonly ICategoryRepository categoryRepository;
 
-        public DeleteCategory(ICategoryRepository categoryRepository)
+        public EditCategory(ICategoryRepository categoryRepository)
         {
             this.categoryRepository = categoryRepository;
         }
-
-        public void Delete(int categoryId)
+        public void Execute(Category category)
         {
-            categoryRepository.DeleteCategory(categoryId);
+            categoryRepository.UpdateCategory(category);
         }
     }
 }

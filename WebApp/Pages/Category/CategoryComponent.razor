@@ -23,14 +23,22 @@
                 <tr>
                     <td>@item.Name</td>
                     <td>@item.Description</td>
-                    <td><button type="button" @onclick="@(() => EditCategory(item))" class="btn btn-warning">Edit</button></td>
-                    <td><button type="button" @onclick="@(() => DeleteCategory(item.CategoryId))" class="btn btn-danger">Delete</button></td>
+                    <td>
+                        <button type="button" @onclick="@(() => EditCategory(item))" class="btn btn-warning">Edit</button>
+                        <button type="button" @onclick="@(() => DeleteCategory(item.CategoryId))" class="btn btn-danger">Delete</button>
+                    </td>
                 </tr>
             }
         </tbody>
 
     </table>
 }
+@*else if (categories == null)
+{
+   <h1>There is no Category,
+   <a href="/addcategory" class="btn btn-link text-primary">Add Category Now!</a>    
+   </h1>
+}*@
 <br />
 <button type="button" @onclick="OnClickAddCategory" class="btn btn-primary">Add Category</button>
 

@@ -2,9 +2,11 @@ using System.Collections.Generic;
 using DataAccess;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using UseCases;
 using UseCases.Interfaces;
+using UseCases.Repository;
 using UseCases.UseCaseInterface;
+using UseCases.UseCaseProduct;
+using UseCases.UsecaseProductInterface;
 using WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,13 +17,27 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
 //Dependency Injection for DataAccess
+//Category
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+//Product
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 //Dependency Injection for UseCases and repositories
+//Category
 builder.Services.AddTransient<IViewCategories, ViewCategories>();
 builder.Services.AddTransient<IAddCategory, AddCategory>();
 builder.Services.AddTransient<IEditCategory, EditCategory>();
 builder.Services.AddTransient<IGetCategoryById, GetCategoryById>();
 builder.Services.AddTransient<IDeleteCategory, DeleteCategory>();
+//Product
+builder.Services.AddTransient<IViewProducts, ViewProducts>();
+builder.Services.AddTransient<IAddProduct, AddProduct>();
+builder.Services.AddTransient<IEditProduct, EditProduct>();
+builder.Services.AddTransient<IGetProductById, GetProductById>();
+builder.Services.AddTransient<IDeleteProduct, DeleteProduct>();
+
+
+
 
 var app = builder.Build();
 

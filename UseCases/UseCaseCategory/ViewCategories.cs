@@ -2,7 +2,7 @@
 using UseCases.Interfaces;
 using UseCases.UseCaseInterface;
 
-namespace UseCases
+namespace UseCases.Repository
 {
     public class ViewCategories : IViewCategories
     {

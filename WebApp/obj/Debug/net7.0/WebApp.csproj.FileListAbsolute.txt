@@ -1,11 +1,3 @@
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.csproj.AssemblyReference.cache
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.AssemblyInfoInputs.cache
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.AssemblyInfo.cs
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.csproj.CoreCompileInputs.cache
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.RazorAssemblyInfo.cache
-C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.RazorAssemblyInfo.cs
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\appsettings.json
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\WebApp.staticwebassets.runtime.json
@@ -20,6 +12,14 @@ C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\UseCase
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\DataAccess.pdb
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\UseCases.pdb
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\bin\Debug\net7.0\CoreEntities.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.csproj.AssemblyReference.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.AssemblyInfoInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.AssemblyInfo.cs
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.RazorAssemblyInfo.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\WebApp.RazorAssemblyInfo.cs
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\staticwebassets\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\staticwebassets\msbuild.build.WebApp.props
 C:\Users\Brent Jay\Desktop\Blazor\BookManagement\WebApp\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApp.props

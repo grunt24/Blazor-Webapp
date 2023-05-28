@@ -1,5 +1,4 @@
-﻿using CoreEntities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,19 +6,20 @@ using System.Threading.Tasks;
 using UseCases.Interfaces;
 using UseCases.UseCaseInterface;
 
-namespace UseCases
+namespace UseCases.Repository
 {
-    public class GetCategoryById : IGetCategoryById
+    public class DeleteCategory : IDeleteCategory
     {
         private readonly ICategoryRepository categoryRepository;
 
-        public GetCategoryById(ICategoryRepository categoryRepository)
+        public DeleteCategory(ICategoryRepository categoryRepository)
         {
             this.categoryRepository = categoryRepository;
         }
-        public Category Execute(int categoryId)
+
+        public void Delete(int categoryId)
         {
-            return categoryRepository.GetCategoryById(categoryId);
+            categoryRepository.DeleteCategory(categoryId);
         }
     }
 }

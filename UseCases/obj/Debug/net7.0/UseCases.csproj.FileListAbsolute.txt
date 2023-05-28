@@ -1,0 +1,15 @@
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\bin\Debug\net7.0\UseCases.deps.json
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\bin\Debug\net7.0\UseCases.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\bin\Debug\net7.0\UseCases.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\bin\Debug\net7.0\CoreEntities.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\bin\Debug\net7.0\CoreEntities.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.csproj.AssemblyReference.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.AssemblyInfoInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.AssemblyInfo.cs
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.csproj.CoreCompileInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.csproj.CopyComplete
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\refint\UseCases.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\UseCases.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\UseCases\obj\Debug\net7.0\ref\UseCases.dll

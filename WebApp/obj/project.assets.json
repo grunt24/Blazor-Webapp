@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "CoreEntities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CoreEntities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreEntities.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CoreEntities": "1.0.0",
+          "UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      },
+      "UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CoreEntities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UseCases.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CoreEntities/1.0.0": {
+      "type": "project",
+      "path": "../CoreEntities/CoreEntities.csproj",
+      "msbuildProject": "../CoreEntities/CoreEntities.csproj"
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "UseCases/1.0.0": {
+      "type": "project",
+      "path": "../UseCases/UseCases.csproj",
+      "msbuildProject": "../UseCases/UseCases.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "DataAccess >= 1.0.0",
+      "UseCases >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Brent Jay\\.nuget\\packages\\": {}
@@ -34,7 +91,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Brent Jay\\Desktop\\Blazor\\BookManagement\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Brent Jay\\Desktop\\Blazor\\BookManagement\\DataAccess\\DataAccess.csproj"
+            },
+            "C:\\Users\\Brent Jay\\Desktop\\Blazor\\BookManagement\\UseCases\\UseCases.csproj": {
+              "projectPath": "C:\\Users\\Brent Jay\\Desktop\\Blazor\\BookManagement\\UseCases\\UseCases.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

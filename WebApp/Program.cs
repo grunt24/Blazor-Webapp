@@ -1,5 +1,10 @@
+using System.Collections.Generic;
+using DataAccess;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using UseCases;
+using UseCases.Interfaces;
+using UseCases.UseCaseInterface;
 using WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +13,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+//Dependency Injection for DataAccess
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+//Dependency Injection for UseCases and repositories
+builder.Services.AddTransient<IViewCategories, ViewCategories>();
+builder.Services.AddTransient<IAddCategory, AddCategory>();
+builder.Services.AddTransient<IEditCategory, EditCategory>();
+builder.Services.AddTransient<IGetCategoryById, GetCategoryById>();
+builder.Services.AddTransient<IDeleteCategory, DeleteCategory>();
 
 var app = builder.Build();
 

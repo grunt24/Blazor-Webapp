@@ -1,0 +1,12 @@
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\bin\Debug\net7.0\CoreEntities.deps.json
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\bin\Debug\net7.0\CoreEntities.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\bin\Debug\net7.0\CoreEntities.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.csproj.AssemblyReference.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.AssemblyInfoInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.AssemblyInfo.cs
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.csproj.CoreCompileInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\refint\CoreEntities.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\CoreEntities.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\CoreEntities\obj\Debug\net7.0\ref\CoreEntities.dll

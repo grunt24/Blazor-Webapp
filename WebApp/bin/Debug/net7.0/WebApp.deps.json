@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "WebApp/1.0.0": {
+        "dependencies": {
+          "DataAccess": "1.0.0",
+          "UseCases": "1.0.0"
+        },
+        "runtime": {
+          "WebApp.dll": {}
+        }
+      },
+      "CoreEntities/1.0.0": {
+        "runtime": {
+          "CoreEntities.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "dependencies": {
+          "CoreEntities": "1.0.0",
+          "UseCases": "1.0.0"
+        },
+        "runtime": {
+          "DataAccess.dll": {}
+        }
+      },
+      "UseCases/1.0.0": {
+        "dependencies": {
+          "CoreEntities": "1.0.0"
+        },
+        "runtime": {
+          "UseCases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoreEntities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

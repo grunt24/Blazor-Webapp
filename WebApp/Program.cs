@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using DataAccess;
+using DataStore.SQL;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 using UseCases;
 using UseCases.Interfaces;
 using UseCases.Repository;
@@ -16,6 +18,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+builder.Services.
+    AddDbContext<AppDbContext>(o =>
+    o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //Dependency Injection for DataAccess
 //Category

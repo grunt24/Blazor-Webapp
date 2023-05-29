@@ -1132,6 +1132,16 @@
             "rid": "win"
           }
         }
+      },
+      "CoreEntities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CoreEntities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreEntities.dll": {}
+        }
       }
     }
   },
@@ -3452,10 +3462,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CoreEntities/1.0.0": {
+      "type": "project",
+      "path": "../CoreEntities/CoreEntities.csproj",
+      "msbuildProject": "../CoreEntities/CoreEntities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CoreEntities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5"
@@ -3487,7 +3503,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Brent Jay\\Desktop\\Blazor\\BookManagement\\CoreEntities\\CoreEntities.csproj": {
+              "projectPath": "C:\\Users\\Brent Jay\\Desktop\\Blazor\\BookManagement\\CoreEntities\\CoreEntities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

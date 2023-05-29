@@ -1,0 +1,17 @@
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\bin\Debug\net7.0\DataStore.SQL.deps.json
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\bin\Debug\net7.0\DataStore.SQL.runtimeconfig.json
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\bin\Debug\net7.0\DataStore.SQL.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\bin\Debug\net7.0\DataStore.SQL.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\bin\Debug\net7.0\CoreEntities.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\bin\Debug\net7.0\CoreEntities.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.csproj.AssemblyReference.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.AssemblyInfoInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.AssemblyInfo.cs
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.csproj.CoreCompileInputs.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.csproj.CopyComplete
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\refint\DataStore.SQL.dll
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.pdb
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\DataStore.SQL.genruntimeconfig.cache
+C:\Users\Brent Jay\Desktop\Blazor\BookManagement\DataStore.SQL\obj\Debug\net7.0\ref\DataStore.SQL.dll

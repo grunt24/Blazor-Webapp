@@ -44,10 +44,7 @@ builder.Services.AddTransient<ISellProduct, SellProduct>();
 
 builder.Services.AddTransient<IRecordTransaction, RecordTransaction>();
 builder.Services.AddTransient<IGetTodayTransaction, GetTodayTransaction>();
-
-
-
-
+builder.Services.AddTransient<IGetTransactions, GetTransactions>();
 
 var app = builder.Build();
 

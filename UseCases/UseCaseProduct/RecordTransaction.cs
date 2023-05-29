@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UseCases.Interfaces;
 using UseCases.UsecaseProductInterface;
 
-namespace UseCases
+namespace UseCases.UseCaseProduct
 {
     public class RecordTransaction : IRecordTransaction
     {

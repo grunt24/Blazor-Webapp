@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using UseCases.Interfaces;
+using UseCases.UsecaseProductInterface;
 
-namespace UseCases
+namespace UseCases.UseCaseProduct
 {
     public class GetTodayTransaction : IGetTodayTransaction
     {
@@ -20,6 +21,6 @@ namespace UseCases
         public IEnumerable<Transaction> Execute(string cashierName)
         {
             return transactionRepository.GetByDay(cashierName, DateTime.Now);
-        } 
+        }
     }
 }

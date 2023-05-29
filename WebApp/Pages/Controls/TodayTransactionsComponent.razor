@@ -4,36 +4,51 @@
 @if (transactions != null)
 {
     <div style="overflow-x: auto;">
-    <table class="table text-center">
-        <thead>
-            <tr>
-                <th>Cashier</th>
-                <th>Product Name</th>
-                <th>Date time</th>
-                <th>Quantity Before</th>
-                @*<th>Before Qty</th>*@
-                <th>Quantity Sold</th>
-                @*<th>Sold Qty</th>*@
-                <th>Quantity Left</th>
-                <th>Sold Amount</th>
-            </tr>
-        </thead>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>Date time</th>
 
-        <tbody>
-            @foreach (var item in transactions)
-            {
-                <tr >
-                    <td>@item.CashierName</td>
-                    <td>@item.ProductName</td>
-                    <td>@item.TimeStamp.ToString("MM/dd HH:mm:ss")</td>
-                    <td>@item.BeforeQty</td>
-                    <td>@item.SoldQty</td>
-                    <td>@(item.BeforeQty - item.SoldQty)</td>
-                    <td>@(string.Format(new System.Globalization.CultureInfo("en-PH"), "{0:C}", item.SoldQty * item.Price))</td>
+                    <th>Cashier</th>
+                    <th>Product Name</th>
+                    <th>Quantity Before</th>
+                    @*<th>Before Qty</th>*@
+                    <th>Quantity Sold</th>
+                    @*<th>Sold Qty</th>*@
+                    <th>Quantity Left</th>
+                    <th>Sold Amount</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+
+            <tbody>
+                @foreach (var item in transactions)
+                {
+                    <tr>
+                        <td>@item.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss")</td>
+
+                        <td>@item.CashierName</td>
+                        <td>@item.ProductName</td>
+                        <td>@item.BeforeQty</td>
+                        <td>@item.SoldQty</td>
+                        <td>@(item.BeforeQty - item.SoldQty)</td>
+                        <td>
+                            <b>
+                                @(string.Format(new System.Globalization.CultureInfo("en-PH"), "{0:C}", item.SoldQty * item.Price))
+                            </b>
+                            
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">&nbsp;</td>
+                    <td><b>Grand Total: </b></td>
+                    <td class="fw-bold text-end">@(string.Format(new System.Globalization.CultureInfo("en-PH"), "{0:C}", transactions.Sum(x => x.Price * x.SoldQty)))</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 }
 

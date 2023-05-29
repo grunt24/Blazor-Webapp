@@ -26,7 +26,7 @@
             {
              <tr>
                     <td>@item.Name</td>
-                    <td>@(Math.Round(item.Price.Value, 2))</td>
+                    <td>@(string.Format(new System.Globalization.CultureInfo("en-PH"), "{0:C}", item.Price.Value, 2))</td>
                     <td>@item.Quantity</td>
                     <td>@getCategoryById.Execute(item.CategoryId.Value)?.Name</td>
                     <td>

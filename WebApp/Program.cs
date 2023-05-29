@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DataAccess;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using UseCases;
 using UseCases.Interfaces;
 using UseCases.Repository;
 using UseCases.UseCaseInterface;
@@ -21,6 +22,8 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 //Product
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+//Transaction
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 
 //Dependency Injection for UseCases and repositories
 //Category
@@ -35,6 +38,13 @@ builder.Services.AddTransient<IAddProduct, AddProduct>();
 builder.Services.AddTransient<IEditProduct, EditProduct>();
 builder.Services.AddTransient<IGetProductById, GetProductById>();
 builder.Services.AddTransient<IDeleteProduct, DeleteProduct>();
+
+builder.Services.AddTransient<IViewProductsByCategoryId, ViewProductsByCategoryId>();
+builder.Services.AddTransient<ISellProduct, SellProduct>();
+
+builder.Services.AddTransient<IRecordTransaction, RecordTransaction>();
+builder.Services.AddTransient<IGetTodayTransaction, GetTodayTransaction>();
+
 
 
 

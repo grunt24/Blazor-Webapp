@@ -16,9 +16,10 @@ namespace DataAccess
         {
             _products = new List<Product>()
             {
-                new Product() {ProductId =  1, CategoryId = 1,Name = "banana", Price = 100.00, Quantity = 2},
-                new Product() {ProductId =  2, CategoryId = 2,Name = "apple", Price = 80.00, Quantity = 1},
-                new Product() {ProductId =  3, CategoryId = 3,Name = "grapes", Price = 1000.00, Quantity = 2}
+                new Product() {ProductId =  1, CategoryId = 1,Name = "banana", Price = 100.00, Quantity = 200},
+                new Product() {ProductId =  2, CategoryId = 2,Name = "apple", Price = 80.00, Quantity = 12},
+                new Product() {ProductId =  3, CategoryId = 3,Name = "grapes", Price = 100.00, Quantity = 52},
+                new Product() {ProductId =  4, CategoryId = 1,Name = "eggp", Price = 1000.00, Quantity = 24}
             };
         }
 
@@ -69,5 +70,9 @@ namespace DataAccess
             }
         }
 
+        public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
+        {
+            return _products.Where(x=>x.CategoryId == categoryId);
+        }
     }
 }

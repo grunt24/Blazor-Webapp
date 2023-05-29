@@ -1,0 +1,49 @@
+﻿@inject IGetTodayTransaction getTodayTransaction
+@inject IViewProducts viewProduct
+
+@if (transactions != null)
+{
+    <div style="overflow-x: auto;">
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th>Cashier</th>
+                <th>Product Name</th>
+                <th>Date time</th>
+                <th>Quantity Before</th>
+                @*<th>Before Qty</th>*@
+                <th>Quantity Sold</th>
+                @*<th>Sold Qty</th>*@
+                <th>Quantity Left</th>
+                <th>Sold Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in transactions)
+            {
+                <tr >
+                    <td>@item.CashierName</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.TimeStamp.ToString("MM/dd HH:mm:ss")</td>
+                    <td>@item.BeforeQty</td>
+                    <td>@item.SoldQty</td>
+                    <td>@(item.BeforeQty - item.SoldQty)</td>
+                    <td>@(string.Format(new System.Globalization.CultureInfo("en-PH"), "{0:C}", item.SoldQty * item.Price))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
+}
+
+
+
+@code {
+    private IEnumerable<Transaction> transactions;
+    public void LoadTransactions(string cashierName)
+    {
+        transactions = getTodayTransaction.Execute(cashierName);
+        StateHasChanged();
+    }
+}
